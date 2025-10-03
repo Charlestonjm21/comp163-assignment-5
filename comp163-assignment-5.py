@@ -51,10 +51,12 @@ for col in range(1, 11):
 print()
 
 # Print each row with products
+# Used chatGPt to explain to me how nested for loop should be used with the appropriate indentation
 for row in range(1, 11):
     print(f"{row:2} ", end="")
     for col in range(1, 11):
         product = row * col
         print(f"{product:4}", end="")
     print()
+
 
