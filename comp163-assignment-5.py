@@ -40,3 +40,21 @@ if is_prime:
     print(f"{prime_number} is prime!")
 print()
 
+# === Challenge 3: Multiplication Table ===
+print("=== Challenge 3: Multiplication Table ===")
+print("\nMultiplication Table:")
+
+# Print header row
+print("    ", end="")
+for col in range(1, 11):
+    print(f"{col:4}", end="")
+print()
+
+# Print each row with products
+for row in range(1, 11):
+    print(f"{row:2} ", end="")
+    for col in range(1, 11):
+        product = row * col
+        print(f"{product:4}", end="")
+    print()
+
